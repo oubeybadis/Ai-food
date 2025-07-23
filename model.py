@@ -9,7 +9,9 @@ import joblib
 @st.cache_data
 def load_data():
     # df = pd.read_csv("C:/datamining/cleaned_ingredients.csv")
-    df = pd.read_csv("C:/Users/j/Desktop/full stack/Ai/Ai-food/cleaned_ingredients.csv")
+    # df = pd.read_csv("D:/fullstack/Ai/aifood/cleaned_ingredients.csv")
+    df = pd.read_csv("cleaned_ingredients.csv")  # Relative path from app.py
+
     cols_to_convert = [
         'Energy_kcal', 'Protein_g', 'Saturated_fats_g', 'Fat_g', 
         'Sugar_g', 'VitA_mcg', 'VitD2_mcg', 'VitE_mg'
